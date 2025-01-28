@@ -1,189 +1,165 @@
-//Font
-// Weights: 400, 700
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
-
-//Mobile: 375px
-
-*{
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: 'Karla', sans-serif;
-}
-
-//Primary Colors
-$Cyan: hsl(179.12, 75.98%, 43.53%);
-$B-Yell: hsl(71, 73%, 54%);
-
-//Neutral Colors
-$L-Gray: hsl(204, 43%, 93%);
-$G-Blue: hsl(218, 22%, 67%);
-
-//Mixins
-@mixin title{
-	font-weight: 700;
-}
-
-@mixin h2{
-	@include title;
-	font-size: 16px;
-	color: #fff;
-	margin-bottom: 15px;
-}
-
-@mixin mobile-card{
-	width: 320px;
-	margin: 0 auto;
-	padding: 20px;
-}
-
-body{
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	background-color: $L-Gray;
-
-.container{
-	margin-top: 120px;
-	margin-bottom: 20px;
-	padding: 0;
-	border-radius: 5px;
-
-
-	
-
-		.upper{
-			width: 650px;
-			background-color: #fff;
-			padding: 40px;
-			border-top-left-radius: 10px;
-			border-top-right-radius: 10px;
-
-			.head{
-				@include title;
-				font-size: 20px;
-				color: $Cyan;
-				margin-bottom: 15px;
-			}
-
-			h4{
-				color: $B-Yell;
-				margin-bottom: 10px;
-				
-			}
-
-			.decrp{
-				color: hsl(217.5, 4.1%, 74.9%);
-			}
-		}
-		
-	
-
-		.lower{
-			display: flex;
-
-			.frst-box{
-				width: 325px;
-				padding: 40px;
-				background-color: $Cyan;
-				border-bottom-left-radius: 10px;
-
-				h2{
-					@include h2;
-				}
-
-				.price{
-					display: flex;
-					align-items: center;
-					color: #fff;
-					margin-bottom: 10px;
-
-					p{
-						font-size: 30px;
-						font-weight: 700;
-						color: #fff;
-					}
-
-					span{
-						margin-left: 10px;
-						font-size: 16px;
-						color: $L-Gray;
-					}
-				}
-
-				.decrp{
-					font-weight: 400;
-					margin-bottom: 15px;
-					color: #fff;
-				}
-
-				button{
-					@include title;
-					font-size: 15px;
-					color: #fff;
-					border: none;
-					width: 245px;
-					height: 40px;
-					background-color: $B-Yell;
-					border-radius: 5px;				}
-			}
-
-			.sec-box{
-				width: 325px;
-				padding: 40px;
-				background-color: hsl(179.48, 61.05%, 51.76%);
-				border-bottom-right-radius: 10px;
-
-				h2{
-					@include h2;
-				}
-
-				p{
-					font-size: 15px;
-					color: $L-Gray;
-				}
-
-			}
-		}
-}
-
-}
-
-@media (max-width: 700px){
-	body{
-	.container{
-		margin-top: 100px;
-
-		.upper{
-			@include mobile-card;
-
-			.decrp{
-				display: inline;
-				br: {display:none};
-
-			}
-		}
-
-		.lower{
-			display: flex;
-			flex-direction: column;
-
-			.frst-box{
-				@include mobile-card;
-				border-radius: 0;
-
-				button{
-					width: 280px;
-				}
-			}
-
-			.sec-box{
-				@include mobile-card;
-				border-bottom-left-radius: 10px;
-			}
-
-		}
-	}
-	}
-	
-}
+// Variables
+:root {
+    --Cyan: hsl(179, 62%, 43%);
+    --Light-Cyan: hsl(179, 47%, 52%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Bright-Yellow: hsl(71, 73%, 62%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+    --border-radius: 6px;
+  }
+  
+  // Base styles
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  ul,
+  ol {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  // Layout
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 70px 0;
+    background-color: var(--Light-Gray);
+  }
+  
+  // Card Component
+  .card-wrapper {
+    max-width: 90%;
+    margin: auto;
+    text-align: start;
+    overflow: hidden;
+    border-radius: calc(var(--border-radius) + 2px);
+    box-shadow: 4px 10px 15px hsla(217, 22%, 67%, 0.438);
+  
+    .card-summary {
+      background-color: #fff;
+      padding: 30px 25px;
+  
+      h1 {
+        color: var(--Cyan);
+        margin-bottom: 20px;
+        font-size: 28px;
+      }
+  
+      h2 {
+        color: var(--Bright-Yellow);
+        margin-bottom: 25px;
+        font-size: 20px;
+      }
+  
+      p {
+        color: var(--Grayish-Blue);
+        line-height: 1.7;
+      }
+    }
+  
+    .card-features {
+      > div {
+        padding: 30px 24px;
+        color: var(--Light-Gray);
+  
+        &.subscribtion {
+          background-color: var(--Cyan);
+  
+          .pricing-plan {
+            p:first-child {
+              font-size: 18px;
+              margin-bottom: 12px;
+  
+              span {
+                font-weight: 700;
+                font-size: 35px;
+                color: #fff;
+                margin-right: 15px;
+              }
+            }
+          }
+  
+          .btn {
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            padding: 15px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+            color: #fff;
+            background-color: var(--Bright-Yellow);
+            border-radius: var(--border-radius);
+            transition: background-color 200ms linear;
+  
+            &:hover {
+              background-color: var(--Light-Bright-Yellow);
+            }
+          }
+        }
+  
+        &.why-us {
+          background-color: var(--Light-Cyan);
+  
+          ul {
+            li:not(:last-child) {
+              margin-bottom: 5px;
+            }
+          }
+        }
+      }
+  
+      .feature-title {
+        margin-bottom: 20px;
+        font-size: 22px;
+        color: #fff;
+      }
+    }
+  }
+  
+  // Media Queries (Progressive Enhancements)
+  @media (min-width: 767px) {
+    .card-wrapper {
+      max-width: 640px;
+  
+      .card-summary {
+        padding: 45px 40px;
+  
+        h2 {
+          margin-bottom: 10px;
+        }
+      }
+  
+      .card-features {
+        display: flex;
+  
+        > div {
+          padding: 40px;
+          flex: 1;
+        }
+      }
+    }
+  }
+  

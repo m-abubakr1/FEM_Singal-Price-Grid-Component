@@ -2,113 +2,61 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
+    <meta name="author" content="Mohamed Aridah" />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
-    <link rel="stylesheet" type="text/css" href="Sass/style.css" />
-
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Main CSS File-->
+    <link rel="stylesheet" href="./Sass/style.css" />
     <title>Frontend Mentor | Single Price Grid Component</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
   </head>
   <body>
-    <div class="container">
-      <div class="upper">
-        <h2 class="head">Join our community</h2>
-
-        <h4>30-day, hassle-free money back guarantee</h4>
-
-        <p class="decrp">
-          Gain access to our full library of tutorials along with expert code
-          reviews.<br />
-          Perfect for any developers who are serious about honing their skills.
-        </p>
-      </div>
-
-      <div class="lower">
-        <div class="frst-box">
-          <h2>Monthly Subscription</h2>
-
-          <div class="price">
-            <p>&dollar;29</p>
-            <span>per month</span>
-          </div>
-
-          <p class="decrp">Full access for less than &dollar;1 a day</p>
-
-          <button>Sign Up</button>
-        </div>
-
-        <div class="sec-box">
-          <h2>Why Us</h2>
-
-          <p class="decrp">
-            Tutorials by industry experts <br />
-            Peer &amp; expert code review <br />
-            Coding exercises <br />
-            Access to our GitHub repos <br />
-            Community forum <br />
-            Flashcard decks <br />
-            New videos every week
+    <main class="main">
+      <div class="card-wrapper">
+        <div class="card-summary">
+          <h1>Join our community</h1>
+          <h2>30-day, hassle-free money back guarantee</h2>
+          <p>
+            Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
           </p>
         </div>
+        <div class="card-features">
+          <div class="subscribtion">
+            <h3 class="feature-title">Monthly Subscription</h3>
+            <div class="pricing-plan">
+              <p><span>&dollar;29</span> per month</p>
+              <p>Full access for less than &dollar;1 a day</p>
+            </div>
+            <a href="#" class="btn">Sign Up</a>
+          </div>
+          <div class="why-us">
+            <h3 class="feature-title">Why Us</h3>
+            <ul>
+              <li>Tutorials by industry experts</li>
+              <li>Peer &amp; expert code review</li>
+              <li>Coding exercises</li>
+              <li>Access to our GitHub repos</li>
+              <li>Community forum</li>
+              <li>Flashcard decks</li>
+              <li>New videos every week</li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-
-    <!--
-  Join our community
-
-  30-day, hassle-free money back guarantee
-
-  Gain access to our full library of tutorials along with expert code reviews. 
-  Perfect for any developers who are serious about honing their skills.
-
-  Monthly Subscription
-
-  &dollar;29 per month
-
-  Full access for less than &dollar;1 a day
-
-  Sign Up
-
-  Why Us
-
-  Tutorials by industry experts
-  Peer &amp; expert code review
-  Coding exercises
-  Access to our GitHub repos
-  Community forum
-  Flashcard decks
-  New videos every week
-
-
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by
-        <a
-          href="https://www.youtube.com/channel/UCQlk9K03J5ThANJ5ZhnuuoQ?view_as=subscriber"
-          >CodeBill</a
-        >.
-      </p>
-    </footer> -->
+    </main>
   </body>
 </html>
