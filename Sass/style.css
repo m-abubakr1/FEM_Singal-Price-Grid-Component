@@ -81,17 +81,13 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 40px;
+    flex: 1;
   }
 }
 .card-wrapper .card-features > div {
   padding: 30px 24px;
   color: hsl(204, 43%, 93%);
-}
-@media (min-width: 767px) {
-  .card-wrapper .card-features > div {
-    padding: 40px;
-    flex: 1;
-  }
 }
 .card-wrapper .card-features > div.subscribtion {
   background-color: hsl(179, 62%, 43%);

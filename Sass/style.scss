@@ -111,16 +111,13 @@ a {
   .card-features {
     @media (min-width: 767px) {
       @include flex-center;
+      padding: 40px;
+        flex: 1;
     }
 
     > div {
       padding: 30px 24px;
       color: $light-gray;
-
-      @media (min-width: 767px) {
-        padding: 40px;
-        flex: 1;
-      }
 
       &.subscribtion {
         background-color: $cyan;
