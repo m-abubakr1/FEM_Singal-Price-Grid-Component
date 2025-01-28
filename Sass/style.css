@@ -112,9 +112,7 @@ body .container .lower .sec-box p {
   }
   body .container .upper .decrp {
     display: inline;
-  }
-  body .container .upper .decrp br {
-    display: none;
+    br-display: none;
   }
   body .container .lower {
     display: flex;
