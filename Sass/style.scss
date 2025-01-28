@@ -3,7 +3,6 @@
     --Cyan: hsl(179, 62%, 43%);
     --Light-Cyan: hsl(179, 47%, 52%);
     --Bright-Yellow: hsl(71, 73%, 54%);
-    --Light-Bright-Yellow: hsl(71, 73%, 62%);
     --Light-Gray: hsl(204, 43%, 93%);
     --Grayish-Blue: hsl(218, 22%, 67%);
     --border-radius: 6px;
@@ -96,7 +95,7 @@
                 font-weight: 700;
                 font-size: 35px;
                 color: #fff;
-                margin-right: 15px;
+                margin-right: 0.5rem;
               }
             }
           }
@@ -115,7 +114,8 @@
             transition: background-color 200ms linear;
   
             &:hover {
-              background-color: var(--Light-Bright-Yellow);
+              background-color: var(--Light-Gray);
+              color: var(--Bright-Yellow);
             }
           }
         }
