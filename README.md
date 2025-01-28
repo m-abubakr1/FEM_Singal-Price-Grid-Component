@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/singal-price-grid-component-using-sassscss-8JG81IeYpy)
+- Live Site URL: [Github pages](https://m-abubakr1.github.io/FEM_Singal-Price-Grid-Component/)
 
 ## My process
 
@@ -77,6 +77,6 @@ const proudOfThisFunc = () => {
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@m-abubakr1](https://www.frontendmentor.io/profile/m-abubakr1)
 
 ## Acknowledgments
